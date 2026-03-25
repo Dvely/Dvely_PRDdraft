@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  Plus, Upload, Globe, Settings, ChevronLeft, 
+  Plus, Upload, Globe, ChevronLeft, 
   Send, HelpCircle, CheckCircle, XCircle, Clock, AlertCircle, 
   Copy, ExternalLink, Play, Trash2, Check, RefreshCw, X,
-  LayoutTemplate, FileCode2, Zap, ShieldCheck, GitCommit,
-  Layout, Activity, Code, Server, Terminal, Lock, LogOut,
-  ChevronDown, Search, ArrowRight, CreditCard, Sparkles, MessageSquare, FilePlus,
-  MonitorPlay, Store, Briefcase, Feather, CheckCircle2, MousePointerClick
+  ShieldCheck, GitCommit,
+  Layout, Activity, Code, Server, Terminal, LogOut,
+  Search, ArrowRight, Sparkles, MessageSquare,
+  MonitorPlay, Store, Briefcase, Feather, CheckCircle2
 } from 'lucide-react';
 
 // --- [Mock Data] ---
@@ -737,7 +737,7 @@ const WorkspaceView = ({ project, onBack, onUpdateProject }) => {
                   )}
                   {targetDomain && (
                     <>
-                      <span className="text-gray-400 text-xs block">/* AI Agent 자동 주입 - GA4 설정 */</span>
+                      <span className="text-gray-400 text-xs block">{'/* AI Agent 자동 주입 - GA4 설정 */'}</span>
                       <span>{'<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYS123"></script>'}</span>
                     </>
                   )}
