@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# VS Code
+.vscode/
+!.vscode/mcp.json
+
+# Build and dependencies in prd app
+prd/node_modules/
+prd/build/
+
+# Local cache
+.cache/
